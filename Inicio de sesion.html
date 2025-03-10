@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/styles_inicio_de_sesion.css">
+    <script src="js/inicio_sesion.js" defer></script>
+    <script src="https://kit.fontawesome.com/8dd92a9059.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="imagenes/favicon.ico" />
+    <title>Titanium Strength socios </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GYM Titanium Strength">
+    <meta name="keywords" content="">
+    <meta name="author" content="Alejandro Sanahuja Benitez">
+</head>
+<body>
+    <div class="background-wrap">
+        <div class="background"></div>
+      </div>
+      
+      <form id="accesspanel" action="login" method="post">
+        <h1 id="litheader">Titanium Strength</h1>
+        <div class="inset">
+          <p>
+            <input type="text" name="username" id="email" placeholder="Correo">
+          </p>
+          <p>
+            <input type="password" name="password" id="password" placeholder="Contraseña">
+          </p>
+          <div style="text-align: center;">
+            <div class="checkboxouter">
+              <input type="checkbox" name="rememberme" id="remember" value="Remember">
+              <label class="checkbox"></label>
+            </div>
+            <label for="remember">Recordar este usuario</label>
+          </div>
+          <input class="loginLoginValue" type="hidden" name="service" value="login" />
+        </div>
+        <p class="p-container">
+          <input type="submit" name="Login" id="go" value="Iniciar sesion">
+        </p>
+      </form>
+
+      <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyARS5_PLuF-f9JiM7kbcthO0sdrPpadsk4",
+          authDomain: "base-de-datos-para-web-testeo.firebaseapp.com",
+          projectId: "base-de-datos-para-web-testeo",
+          storageBucket: "base-de-datos-para-web-testeo.firebasestorage.app",
+          messagingSenderId: "120445215566",
+          appId: "1:120445215566:web:45a50a18808c7ced3ef41f",
+          measurementId: "G-G0SQD1WH88"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>

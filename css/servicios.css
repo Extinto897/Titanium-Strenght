@@ -1,0 +1,65 @@
+.menu-container {/*aqui se encuentra el color del fondo del menu*/
+    display: flex;
+    align-items: center;
+    background-color: #d3d3d3;   /*color fondo del menu*/  /*cambiar color color puesto provisional*/
+    padding: 10px 20px;
+}
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.menu a {/*aqui se encuentra el color del texto*/
+    color: rgb(11, 8, 11);  /*color del texto*/ /*cambiar color color puesto provisional*/
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+}
+.menu a:hover {/*aqui se encuentra el color cuando pasas por encima el raton*/
+    background-color: #808080;   /*color botones cuando lo pones el raton encima*/ /*cambiar color color puesto provisional*/
+}
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+}
+.section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.section img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+.text-side {
+  flex: 1;
+  size-text: 14px;
+}
+.text-below {
+  margin-top: 10px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+  width: 100%;
+}
+.social-links {
+  flex: 1; /* Ocupa solo el espacio necesario a la izquierda */
+}
+.social-links a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #333;
+}
+.copyright {
+  flex: 2; /* Toma más espacio para centrar el texto */
+  text-align: center; /* Centra el texto en su propio contenedor */
+  color: #666;
+}
